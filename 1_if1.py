@@ -15,6 +15,27 @@
 """
 
 def main():
+ while True:
+  try:
+     
+   age = int(input("Введите пожалуйста возраст: "))
+   
+   if age in range(0,6):
+      print (age, "Пора в сад")
+   elif age in range(7,16):
+      print (age, "Пора в школу")
+   elif age in range(17,25):
+      print (age, "Пора в ВУЗ")
+   elif age in range(25,100):
+      print (age, "Пора на работу")
+   elif age > 100:
+      print("Слишком много лет , отдыхай")
+   break
+  
+  except ValueError: 
+   
+    print("Не является числом")
+   
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
