@@ -18,7 +18,6 @@ def main():
  while True:
   try:
      
-     
    age = int(input("Введите пожалуйста возраст: "))
    
    if age in range(0,6):
