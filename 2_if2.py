@@ -27,6 +27,7 @@ def main():
     if str1  != str2 and str2 =="learn":
       print("3")
 
+
    except ValueError: 
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
