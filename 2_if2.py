@@ -16,11 +16,24 @@
 """
 
 def main():
+ while True:
+   try:
+    str1 = str(input("Введите строку 1: "))
+    str2 = str(input("Введите строку 2: "))
+    if str1 == str2:
+      print("1")
+    if str1  != str2 and len(str1) > len(str2):
+      print("2")
+    if str1  != str2 and str2 =="learn":
+      print("3")
+
+   except ValueError: 
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
+    print("0")# Данное исключение не должно отработать потому что я преобразую в строку.
+   
     
 if __name__ == "__main__":
     main()
