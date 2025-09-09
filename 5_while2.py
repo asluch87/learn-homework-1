@@ -6,7 +6,7 @@
 
 * Создайте словарь типа "вопрос": "ответ", например:
   {"Как дела": "Хорошо!", "Что делаешь?": "Программирую"} и так далее
-* Напишите функцию ask_user() которая с помощью функции input()
+* Напишите функцЧто делаешьию ask_user() которая с помощью функции input()
   просит пользователя ввести вопрос, а затем, если вопрос есть
   в словаре, программа давала ему соотвествующий ответ. Например:
 
@@ -18,10 +18,21 @@
 questions_and_answers = {}
 
 def ask_user(answers_dict):
-    """
-    Замените pass на ваш код
-    """
-    pass
+   
+   answers_dict = {"Как дела": "Хорошо!", "Что делаешь?": "Программирую"}
+   while True:
+         questions_and_answers = input("Чем занят:")
+         if questions_and_answers in answers_dict:
+             Answer = answers_dict[questions_and_answers]
+             print(f"{Answer}")
+             break
+         else:
+             print("такого запроса нет")  
+       
+       
+
+      
+    
     
 if __name__ == "__main__":
     ask_user(questions_and_answers)
