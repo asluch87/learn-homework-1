@@ -15,6 +15,7 @@
 
 """
 
+
 def main():
  while True:
    try:
@@ -26,7 +27,6 @@ def main():
       print("2")
     if str1  != str2 and str2 =="learn":
       print("3")
-
 
    except ValueError: 
     """

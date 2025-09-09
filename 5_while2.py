@@ -18,8 +18,8 @@
 questions_and_answers = {}
 
 def ask_user(answers_dict):
-   
    answers_dict = {"Как дела": "Хорошо!", "Что делаешь?": "Программирую"}
+
    while True:
          questions_and_answers = input("Чем занят:")
          if questions_and_answers in answers_dict:
