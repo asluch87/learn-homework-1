@@ -41,6 +41,7 @@ for price in mydict:
    all_sales.extend(price['items_sold']) # Добавление в массив all_sales знчений items_sold по циклу из словаря mydict
 sum_All_solid = sum(all_sales)
   
+  
 
 print(f"суммарное Общее количество продаж всех товаров {sum_All_solid}")
 print ("--------------------------------------------------------")  
