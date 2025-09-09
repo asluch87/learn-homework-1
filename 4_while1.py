@@ -11,10 +11,21 @@
 
 
 def hello_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
+ 
+  while True:
+   variable1 = input("Как дела:") 
+   print(f"{variable1}") # мне для логов строку можно удалять.
+   if variable1 != "Хорошо":
+     print("Обрабатываем повторно") # для логов.
+     continue
+   elif variable1 == "Хорошо": 
+    break
+  pass
+    
+  
+
+  
+
 
     
 if __name__ == "__main__":
