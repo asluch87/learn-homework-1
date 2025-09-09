@@ -29,6 +29,7 @@ for price in mydict:
  print(f"{price['product']} {total_items_sold}") # f строка позволяет сочетать стринговые значения и переменные.
 
  print ("--------------------------------------------------------")
+ 
 for price in mydict:
   sr_item_solid = sum(price['items_sold'])/ len(price['items_sold'])
   print (f"среднее количество продаж для {price['product']} ")
@@ -41,7 +42,7 @@ for price in mydict:
    all_sales.extend(price['items_sold']) # Добавление в массив all_sales знчений items_sold по циклу из словаря mydict
 sum_All_solid = sum(all_sales)
   
-  
+
 
 print(f"суммарное Общее количество продаж всех товаров {sum_All_solid}")
 print ("--------------------------------------------------------")  
