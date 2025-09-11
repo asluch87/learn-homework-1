@@ -30,6 +30,7 @@ for price in mydict:
 
  print ("--------------------------------------------------------")
  
+ 
 for price in mydict:
   sr_item_solid = sum(price['items_sold'])/ len(price['items_sold'])
   print (f"среднее количество продаж для {price['product']} ")
