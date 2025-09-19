@@ -11,32 +11,30 @@
 * Если строки разные и первая длиннее, вернуть 2
 * Если строки разные и вторая строка 'learn', возвращает 3
 * Вызвать функцию несколько раз, передавая ей разные праметры 
-  и выводя на экран результаты 
-
+  и выводя на экран результаты
 
 """
 
 def main():
- while True:
-   
-   try:
-    str1 = str(input("Введите строку 1: "))
-    str2 = str(input("Введите строку 2: "))
-    if str1 == str2:
-      print("1")
-    if str1  != str2 and len(str1) > len(str2):
-      print("2")
-    if str1  != str2 and str2 =="learn":
-      print("3")
-
-
-   except ValueError: 
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    print("0")# Данное исключение не должно отработать потому что я преобразую в строку.
-   
+  def compare_strings(str1, str2):
+  
+    if type(str1) != str or type(str2) != str:
+        return 0
     
+   
+    if str1 == str2:
+        return 1
+ 
+    if len(str1) > len(str2):
+        return 2
+    
+    if str2 == "learn":
+        return 3
+    
+  print(compare_strings(123, "привет"))     # 0 (не строки)
+  print(compare_strings("hello", "hello"))  # 1 (одинаковые)
+  print(compare_strings("python", "java"))  # 2 (первая длиннее)
+  print(compare_strings("hi", "learn"))     # 3 (вторая = "learn")
+  print(compare_strings("learn", "java"))   # None (ни одно условие)
 if __name__ == "__main__":
     main()

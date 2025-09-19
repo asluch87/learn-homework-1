@@ -23,8 +23,8 @@ def ask_user(answers_dict):
    while True:
          questions_and_answers = input("Чем занят:")
          if questions_and_answers in answers_dict:
-             Answer = answers_dict[questions_and_answers]
-             print(f"{Answer}")
+             answer = answers_dict[questions_and_answers]
+             print(f"{answer}")
              break
          else:
              print("такого запроса нет")  

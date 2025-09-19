@@ -16,8 +16,11 @@
 
 
 
-price = 100
-discount = 95
+#price = 100
+#discount = 95 - Блок проверок закоментил, проверял в начале привидение типов.
+
+
+
 def discounted(price,discount,max_discount = 20):
     try:
         price = float(price)

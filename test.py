@@ -16,14 +16,7 @@ Newproduct = [
 ]
 
 
-
-
-newnew = {
-a:3,
-b:4
-
-}
-print (newnew)            
+      
 
 print(Newproduct)
 

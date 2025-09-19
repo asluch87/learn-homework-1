@@ -18,7 +18,8 @@ def hello_user():
    if variable1 != "Хорошо":
      print("Обрабатываем повторно") # для логов.
      continue
-   elif variable1 == "Хорошо": 
+   else:
+    variable1 == "Хорошо"
     break
   pass
 
